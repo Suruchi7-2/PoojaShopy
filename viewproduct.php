@@ -21,7 +21,19 @@ include('connect.php');
     <!-- buikld table to show product -->
     <div class="container">
         <section class="display-product">
-            <table>
+            
+
+    
+    
+    <?php 
+    include('connect.php');
+    $sql ="select * from products";
+
+
+   $result= mysqli_query($conn,$sql);
+   $num=1;
+   if(mysqli_num_rows($result)>0)
+   {echo " <table>
                 <thead>
                     <tr>
                         <th>Sr.No.</th>
@@ -31,19 +43,39 @@ include('connect.php');
                         <th>Action</th>
 </tr>
 </thead>
-<tbody>
+<tbody>";
+
+    // logic tro fetch data
+    while($row=mysqli_fetch_assoc($result))
+   // echo $row['image'];
+   {
+
+    ?>
     <tr>
-        <td>1</td>
-        <td>shop</td>
-        <td>lapy</td>
-        <td>34</td>
+        <td> <?php echo $num ?> </td>
+        <td> <img src="images/<?php echo $row["image"]?>" alt=
+        <?php echo $row['name'] ?> > </td>
+
+        <td><?php echo $row['name']?> </td>
+        <td><?php echo $row['price']?> </td>
+        
         <td>
-            <a href="" class="delete-product-btn"><i class="fas fa-trash"></i></a>
+            <a href="delete.php?delete=<?php echo $row['id'] ?>" class="delete-product-btn" 
+            onclick="return confirm('Are u sure wanna delete item?');"><i class="fas fa-trash"></i></a>
             <a href="" class="update-product-btn"><i class="fas fa-edit"></i></a>
 </td>
-        </tr>
-    </tbody>
+</tr>
+    <?php
+    $num++;
 
+   }
+
+}else{
+    echo "<div class='empty-text'>No Products Avalable </div>";
+
+}
+    ?>
+    </tbody>
 </table>
         </section>
     </div>
