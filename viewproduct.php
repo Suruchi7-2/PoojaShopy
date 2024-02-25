@@ -62,7 +62,7 @@ include('connect.php');
         <td>
             <a href="delete.php?delete=<?php echo $row['id'] ?>" class="delete-product-btn" 
             onclick="return confirm('Are u sure wanna delete item?');"><i class="fas fa-trash"></i></a>
-            <a href="" class="update-product-btn"><i class="fas fa-edit"></i></a>
+            <a href="edit.php?edit=<?php echo $row['id'] ?>" class="update-product-btn"><i class="fas fa-edit"></i></a>
 </td>
 </tr>
     <?php

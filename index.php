@@ -2,7 +2,7 @@
 include('connect.php');
 if(isset($_POST["addproduct"])){
     $name=$_POST["name"];
-    echo $name;
+    // echo $name;
     $price=$_POST["price"];
     $image=$_FILES["image"]['name'];
     $imagetmp=$_FILES['image']['tmp_name'];
