@@ -31,7 +31,13 @@ html {
     padding-bottom: 5rem;
     height: 100vh;
     background-color: var(--lightgray);
+    /* margin-top: 4px; */
 }
+
+
+/* .container .heading {
+    margin-top: 4;
+} */
 
 
 /* header styles */
@@ -44,36 +50,36 @@ html {
     z-index: 1000;
 }
 
-.header .header_body {
+.header .header-body {
     display: flex;
     align-items: center;
     padding: 2.5rem 2rem;
 }
 
-.header .header_body .logo {
+.header .header-body .logo {
     margin-right: auto;
     font-size: 2.5rem;
     color: var(--color4);
 }
 
-.header .header_body .navbar a {
+.header .header-body .navbar a {
     margin-left: 2rem;
     font-size: 2rem;
     color: var(--white);
 }
 
-.header .header_body .cart {
+.header .header-body .cart {
     margin-left: 2rem;
     font-size: 2rem;
     color: var(--white);
 }
 
-.header .header_body .navbar a:hover,
-.header .header_body .cart:hover {
+.header .header-body .navbar a:hover,
+.header .header-body .cart:hover {
     color: var(--color4);
 }
 
-.header .header_body .cart span {
+.header .header-body .cart span {
     padding: 0 0.5rem;
 }
 
@@ -117,14 +123,17 @@ html {
     color: var(--color1);
 }
 
-section {
-    padding: 2rem;
+.container section {
+    /* .add-product-section { */
+    padding-top: 6rem;
+    /* Adjust padding-top as needed */
+    /* } */
 }
 
 
 /* add products form */
 
-.add_product,
+.add-product,
 .update_product {
     max-width: 600px;
     background-color: var(--color2);
@@ -134,8 +143,8 @@ section {
     margin-top: 2rem;
 }
 
-.add_product .input_fields,
-.update_product .input_fields {
+.add-product .input-field,
+.update_product .input-field {
     padding: 1rem 1.2rem;
     font-size: 1.6rem;
     color: var(--black);
@@ -147,7 +156,7 @@ section {
 
 /* submit button */
 
-.submit_btn,
+.submit-btn,
 .edit_btn,
 .cancel_btn {
     display: block;
@@ -168,7 +177,7 @@ section {
     margin: 2rem auto;
 }
 
-.submit_btn:hover {
+.submit-btn:hover {
     color: var(--color3);
 }
 
