@@ -5,8 +5,8 @@
         <a href="index.php" class="logo">Pooja SHopee</a>
   <!-- three navbar through rightward-->
     <nav class="navbar" >
-        <a href="add.php">Add Product</a>
-        <a href="view.php">View Product</a>
+        <a href="index.php">Add Product</a>
+        <a href="viewproduct.php">View Product</a>
         <a href="Shopit.php">Shop it</a>
 </nav>
 <!-- shopping cart icon -->

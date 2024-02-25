@@ -14,10 +14,10 @@ if(isset($_POST["addproduct"])){
     if($result)
     {
         move_uploaded_file($imagetmp,$imagefolder);
-        echo"  inserted";
+        $displaymsg="Product inserted Successfully";
     }
     else{
-        die("something went wrong");
+        $displaymsg="Something error";
     }
 }
 ?>
@@ -45,6 +45,17 @@ if(isset($_POST["addproduct"])){
 
 <!-- form section -->
 <div class="container">
+    <!-- message display for insertion -->
+    <?php
+    if(isset($displaymsg))
+    {
+        echo "  <div class='display-message'>
+        <span>$displaymsg</span>
+        <i class='fa-solid fa-scissors' onclick='this.parentElement.style.display=`none`';></i>    
+        </div> ";
+    }
+    ?>
+    
     <section>
         <h3 class="heading">Add Products</h3>
         <!-- enctype atttribute of form allow us to just upload image in adatbase -->

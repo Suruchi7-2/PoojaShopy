@@ -94,7 +94,7 @@ html {
 
 /* index.php file */
 
-.display_message {
+.display-message {
     background-color: var(--color2);
     padding: 2.5rem 2rem;
     display: flex;
@@ -102,16 +102,16 @@ html {
     justify-content: space-between;
 }
 
-.display_message span {
+.display-message span {
     font-size: 1.5rem;
 }
 
-.display_message i {
+.display-message i {
     font-size: 2.5rem;
     cursor: pointer;
 }
 
-.display_message i:hover {
+.display-message i:hover {
     color: var(--red);
 }
 
@@ -134,7 +134,7 @@ html {
 /* add products form */
 
 .add-product,
-.update_product {
+.update-product {
     max-width: 600px;
     background-color: var(--color2);
     border-radius: 0.5rem;
@@ -144,7 +144,7 @@ html {
 }
 
 .add-product .input-field,
-.update_product .input-field {
+.update-product .input-field {
     padding: 1rem 1.2rem;
     font-size: 1.6rem;
     color: var(--black);
@@ -157,8 +157,8 @@ html {
 /* submit button */
 
 .submit-btn,
-.edit_btn,
-.cancel_btn {
+.edit-btn,
+.cancel-btn {
     display: block;
     width: 50%;
     text-align: center;
@@ -172,7 +172,7 @@ html {
     margin: 0 auto;
 }
 
-.cancel_btn {
+.cancel-btn {
     background-color: var(--red);
     margin: 2rem auto;
 }
@@ -184,12 +184,12 @@ html {
 
 /* view_products.php */
 
-.display_product table {
+.display-product table {
     width: 100%;
     text-align: center;
 }
 
-.display_product table thead th {
+.display-product table thead th {
     padding: 1.5rem;
     font-size: 1.5rem;
     background-color: var(--color2);
@@ -204,7 +204,7 @@ td {
     text-transform: uppercase;
 }
 
-.empty_text {
+.empty-text {
     background-color: var(--color2);
     padding: 2.5rem 2rem;
     font-size: 2rem;
@@ -218,8 +218,8 @@ td {
     width: 100%;
 }
 
-.delete_product_btn,
-.update_product_btn {
+.delete-product-btn,
+.update-product-btn {
     text-align: center;
     color: var(--red);
     font-size: 1.7rem;
@@ -227,7 +227,7 @@ td {
     cursor: pointer;
 }
 
-.update_product_btn {
+.update-product-btn {
     color: var(--color2);
 }
 
